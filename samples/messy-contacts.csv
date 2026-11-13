@@ -1,0 +1,21 @@
+Name,Email,Phone,Company,City,State,Last Service
+  jane doe , Jane.Doe@ACME.com , (212) 555-0142 , Acme Facilities , New York , NY , 1/5/24
+Jane Doe,jane.doe@acme.com,212-555-0142,Acme Facilities,New York,NY,2024-01-05
+JOHN SMITH,JOHN.SMITH@metro-hvac.com,12125550199,Metro HVAC,brooklyn,ny,"Jan 12, 2024"
+John Smith,john.smith@metro-hvac.com,212.555.0199,Metro HVAC,Brooklyn,NY,12-Jan-2024
+maria gonzalez,maria@bad email,555-0148,Quick Plumbing,Queens,NY,03/22/2025
+Robert   Chen,  robert.chen@BUILDINGS.org , 917.555.0100 x12 , Chen Electric , Manhattan , NY , 2025/7/8
+Aisha Patel,aisha.patel@riverside.example,(646) 555-0188,Riverside Plaza,New York,ny,"July 4, 2026"
+"PATEL, AISHA",Aisha.Patel@riverside.example,6465550188,Riverside Plaza,New York,NY,2026-07-04
+Tom Nguyen,tom.nguyen@example.com,201-555-0133,Harbor Roofing,Jersey City,NJ,8/15/23
+,missing.name@example.com,(718) 555-0160,Solo Handyman,Bronx,NY,2024-11-01
+Sarah O'Neil,SARAH.ONEIL@example.com,9175550121,,Astoria,NY,15 Oct 2025
+Chris Bailey,chris.bailey@example.com,not-a-phone,Bailey Painting,Hoboken,NJ,13.09.2026
+Luis Romero,luis.romero@example.com,347.555.0177,Romero Masonry,Bronx,NY,n/a
+Elena Vasquez,elena.vasquez@ACME.com,2125550142,Acme Facilities,New York,NY,01-05-2024
+  ,  ,  , Empty Row LLC , , ,
+Priya Shah,priya.shah@example.com,929-555-0110,Shah Flooring,Queens,NY,2024.5.9
+David Kim,david.kim@example.com,+1 718 555 0194,Kim Glass,Brooklyn,NY,5/9/24
+Mike Rossi,,(973) 555-0155,Rossi Doors,Newark,NJ,2/2/26
+Michael Rossi,,9735550155,Rossi Doors,Newark,NJ,2026-02-02
+mike rossi,,973-555-0155,Rossi Doors,Newark,NJ,2026-02-02

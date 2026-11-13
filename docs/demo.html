@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<title>Contact Sheet Cleaner — sample output</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<style>
+  :root { font-family: "IBM Plex Sans", "Segoe UI", sans-serif; color: #1a1c16; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body { width: 1440px; height: 900px; overflow: hidden; background: #f3f1eb; padding: 36px 44px 32px; }
+  header { display: flex; justify-content: space-between; align-items: end; margin-bottom: 22px; }
+  .eyebrow { margin: 0 0 4px; color: #5d6158; letter-spacing: 0.08em; text-transform: uppercase; font-size: 12px; font-weight: 600; }
+  h1 { margin: 0; font-size: 36px; letter-spacing: -0.03em; }
+  .cmd { font-family: "IBM Plex Mono", ui-monospace, monospace; background: #152033; color: #f3f1eb; padding: 12px 16px; border-radius: 10px; font-size: 14px; }
+  .cmd span { color: #e2b07a; }
+  .stats { display: flex; gap: 12px; margin-bottom: 20px; }
+  .stat { flex: 1; background: #fffcf7; border: 1px solid #d9d3c7; border-radius: 12px; padding: 12px 14px; box-shadow: 0 8px 24px rgba(21,32,51,0.05); }
+  .stat b { display: block; font-size: 28px; letter-spacing: -0.04em; }
+  .stat span { color: #5d6158; font-size: 12px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.05em; }
+  .panels { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  section { background: #fffcf7; border: 1px solid #d9d3c7; border-radius: 14px; overflow: hidden; box-shadow: 0 8px 24px rgba(21,32,51,0.05); }
+  section h2 { margin: 0; padding: 12px 16px; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; background: #f7f4ee; border-bottom: 1px solid #d9d3c7; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th, td { text-align: left; padding: 9px 10px; border-top: 1px solid #ece7dc; vertical-align: top; white-space: nowrap; }
+  th { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: #5d6158; }
+  td.flag { color: #9f1f16; font-weight: 600; }
+  footer { margin-top: 16px; color: #5d6158; font-size: 13px; }
+</style>
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">Python CLI · CSV &amp; Excel</p>
+      <h1>Contact Sheet Cleaner</h1>
+    </div>
+    <div class="cmd">python -m contact_cleaner <span>samples/messy-contacts.csv</span></div>
+  </header>
+  <div class="stats"><div class="stat"><b>20</b><span>rows in</span></div><div class="stat"><b>16</b><span>rows out</span></div><div class="stat"><b>4</b><span>duplicates removed</span></div><div class="stat"><b>13</b><span>phones normalized</span></div><div class="stat"><b>6</b><span>emails normalized</span></div><div class="stat"><b>14</b><span>dates to ISO</span></div></div>
+  <div class="panels">
+    <section>
+      <h2>Before · messy input</h2>
+      <table>
+        <thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Last Service</th></tr></thead>
+        <tbody>
+<tr><td class="">jane doe</td><td class="flag">Jane.Doe@ACME.com</td><td class="">(212) 555-0142</td><td class="flag">1/5/24</td></tr>
+<tr><td class="flag">JOHN SMITH</td><td class="flag">JOHN.SMITH@metro-hvac.com</td><td class="flag">12125550199</td><td class="flag">Jan 12, 2024</td></tr>
+<tr><td class="">maria gonzalez</td><td class="flag">maria@bad email</td><td class="flag">555-0148</td><td class="flag">03/22/2025</td></tr>
+<tr><td class="flag">Robert   Chen</td><td class="flag">robert.chen@BUILDINGS.org</td><td class="flag">917.555.0100 x12</td><td class="flag">2025/7/8</td></tr>
+<tr><td class="flag">PATEL, AISHA</td><td class="flag">Aisha.Patel@riverside.example</td><td class="flag">6465550188</td><td class="">2026-07-04</td></tr>
+<tr><td class="">Chris Bailey</td><td class="">chris.bailey@example.com</td><td class="flag">not-a-phone</td><td class="">13.09.2026</td></tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+      <h2>After · normalized &amp; deduped</h2>
+      <table>
+        <thead><tr><th>Name</th><th>Email</th><th>Phone</th><th>Last Service</th></tr></thead>
+        <tbody>
+<tr><td class="">Jane Doe</td><td class="">jane.doe@acme.com</td><td class="">(212) 555-0142</td><td class="">2024-01-05</td></tr>
+<tr><td class="">John Smith</td><td class="">john.smith@metro-hvac.com</td><td class="">(212) 555-0199</td><td class="">2024-01-12</td></tr>
+<tr><td class="">Maria Gonzalez</td><td class="">maria@bad email</td><td class="">555-0148</td><td class="">2025-03-22</td></tr>
+<tr><td class="">Robert Chen</td><td class="">robert.chen@buildings.org</td><td class="">(917) 555-0100 ext. 12</td><td class="">2025-07-08</td></tr>
+<tr><td class="">Aisha Patel</td><td class="">aisha.patel@riverside.example</td><td class="">(646) 555-0188</td><td class="">2026-07-04</td></tr>
+<tr><td class="">Chris Bailey</td><td class="">chris.bailey@example.com</td><td class="">not-a-phone</td><td class="">2026-09-13</td></tr>
+        </tbody>
+      </table>
+    </section>
+  </div>
+  <footer>Sample / demo contacts, not a client list. Invalid values (bad email, unrecognized phone) are flagged and left in the report.</footer>
+</body>
+</html>

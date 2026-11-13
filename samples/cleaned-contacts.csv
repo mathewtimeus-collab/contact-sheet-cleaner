@@ -1,0 +1,17 @@
+name,email,phone,company,city,state,last_service
+Jane Doe,jane.doe@acme.com,(212) 555-0142,Acme Facilities,New York,NY,2024-01-05
+John Smith,john.smith@metro-hvac.com,(212) 555-0199,Metro HVAC,Brooklyn,NY,2024-01-12
+Maria Gonzalez,maria@bad email,555-0148,Quick Plumbing,Queens,NY,2025-03-22
+Robert Chen,robert.chen@buildings.org,(917) 555-0100 ext. 12,Chen Electric,Manhattan,NY,2025-07-08
+Aisha Patel,aisha.patel@riverside.example,(646) 555-0188,Riverside Plaza,New York,NY,2026-07-04
+Tom Nguyen,tom.nguyen@example.com,(201) 555-0133,Harbor Roofing,Jersey City,NJ,2023-08-15
+,missing.name@example.com,(718) 555-0160,Solo Handyman,Bronx,NY,2024-11-01
+Sarah O'Neil,sarah.oneil@example.com,(917) 555-0121,,Astoria,NY,2025-10-15
+Chris Bailey,chris.bailey@example.com,not-a-phone,Bailey Painting,Hoboken,NJ,2026-09-13
+Luis Romero,luis.romero@example.com,(347) 555-0177,Romero Masonry,Bronx,NY,
+Elena Vasquez,elena.vasquez@acme.com,(212) 555-0142,Acme Facilities,New York,NY,2024-01-05
+,,,Empty Row LLC,,,
+Priya Shah,priya.shah@example.com,(929) 555-0110,Shah Flooring,Queens,NY,2024-05-09
+David Kim,david.kim@example.com,(718) 555-0194,Kim Glass,Brooklyn,NY,2024-05-09
+Mike Rossi,,(973) 555-0155,Rossi Doors,Newark,NJ,2026-02-02
+Michael Rossi,,(973) 555-0155,Rossi Doors,Newark,NJ,2026-02-02

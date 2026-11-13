@@ -1,0 +1,358 @@
+{
+  "rows_in": 20,
+  "rows_out": 16,
+  "duplicates_removed": 4,
+  "phones_normalized": 13,
+  "emails_normalized": 6,
+  "emails_invalid": 1,
+  "dates_normalized": 14,
+  "dates_unparsed": 0,
+  "names_normalized": 6,
+  "cities_normalized": 1,
+  "states_normalized": 2,
+  "changes": [
+    {
+      "row": 2,
+      "field": "name",
+      "from": "  jane doe ",
+      "to": "Jane Doe",
+      "issue": null
+    },
+    {
+      "row": 2,
+      "field": "email",
+      "from": " Jane.Doe@ACME.com ",
+      "to": "jane.doe@acme.com",
+      "issue": null
+    },
+    {
+      "row": 2,
+      "field": "last_service",
+      "from": " 1/5/24",
+      "to": "2024-01-05",
+      "issue": null
+    },
+    {
+      "row": 3,
+      "field": "phone",
+      "from": "212-555-0142",
+      "to": "(212) 555-0142",
+      "issue": null
+    },
+    {
+      "row": 4,
+      "field": "name",
+      "from": "JOHN SMITH",
+      "to": "John Smith",
+      "issue": null
+    },
+    {
+      "row": 4,
+      "field": "email",
+      "from": "JOHN.SMITH@metro-hvac.com",
+      "to": "john.smith@metro-hvac.com",
+      "issue": null
+    },
+    {
+      "row": 4,
+      "field": "phone",
+      "from": "12125550199",
+      "to": "(212) 555-0199",
+      "issue": null
+    },
+    {
+      "row": 4,
+      "field": "city",
+      "from": "brooklyn",
+      "to": "Brooklyn",
+      "issue": null
+    },
+    {
+      "row": 4,
+      "field": "state",
+      "from": "ny",
+      "to": "NY",
+      "issue": null
+    },
+    {
+      "row": 4,
+      "field": "last_service",
+      "from": "Jan 12, 2024",
+      "to": "2024-01-12",
+      "issue": null
+    },
+    {
+      "row": 5,
+      "field": "phone",
+      "from": "212.555.0199",
+      "to": "(212) 555-0199",
+      "issue": null
+    },
+    {
+      "row": 5,
+      "field": "last_service",
+      "from": "12-Jan-2024",
+      "to": "2024-01-12",
+      "issue": null
+    },
+    {
+      "row": 6,
+      "field": "name",
+      "from": "maria gonzalez",
+      "to": "Maria Gonzalez",
+      "issue": null
+    },
+    {
+      "row": 6,
+      "field": "email",
+      "from": "maria@bad email",
+      "to": "maria@bad email",
+      "issue": "invalid email"
+    },
+    {
+      "row": 6,
+      "field": "phone",
+      "from": "555-0148",
+      "to": "555-0148",
+      "issue": "unrecognized phone"
+    },
+    {
+      "row": 6,
+      "field": "last_service",
+      "from": "03/22/2025",
+      "to": "2025-03-22",
+      "issue": null
+    },
+    {
+      "row": 7,
+      "field": "name",
+      "from": "Robert   Chen",
+      "to": "Robert Chen",
+      "issue": null
+    },
+    {
+      "row": 7,
+      "field": "email",
+      "from": "  robert.chen@BUILDINGS.org ",
+      "to": "robert.chen@buildings.org",
+      "issue": null
+    },
+    {
+      "row": 7,
+      "field": "phone",
+      "from": " 917.555.0100 x12 ",
+      "to": "(917) 555-0100 ext. 12",
+      "issue": null
+    },
+    {
+      "row": 7,
+      "field": "last_service",
+      "from": " 2025/7/8",
+      "to": "2025-07-08",
+      "issue": null
+    },
+    {
+      "row": 8,
+      "field": "state",
+      "from": "ny",
+      "to": "NY",
+      "issue": null
+    },
+    {
+      "row": 8,
+      "field": "last_service",
+      "from": "July 4, 2026",
+      "to": "2026-07-04",
+      "issue": null
+    },
+    {
+      "row": 9,
+      "field": "name",
+      "from": "PATEL, AISHA",
+      "to": "Aisha Patel",
+      "issue": null
+    },
+    {
+      "row": 9,
+      "field": "email",
+      "from": "Aisha.Patel@riverside.example",
+      "to": "aisha.patel@riverside.example",
+      "issue": null
+    },
+    {
+      "row": 9,
+      "field": "phone",
+      "from": "6465550188",
+      "to": "(646) 555-0188",
+      "issue": null
+    },
+    {
+      "row": 10,
+      "field": "phone",
+      "from": "201-555-0133",
+      "to": "(201) 555-0133",
+      "issue": null
+    },
+    {
+      "row": 10,
+      "field": "last_service",
+      "from": "8/15/23",
+      "to": "2023-08-15",
+      "issue": null
+    },
+    {
+      "row": 12,
+      "field": "email",
+      "from": "SARAH.ONEIL@example.com",
+      "to": "sarah.oneil@example.com",
+      "issue": null
+    },
+    {
+      "row": 12,
+      "field": "phone",
+      "from": "9175550121",
+      "to": "(917) 555-0121",
+      "issue": null
+    },
+    {
+      "row": 12,
+      "field": "last_service",
+      "from": "15 Oct 2025",
+      "to": "2025-10-15",
+      "issue": null
+    },
+    {
+      "row": 13,
+      "field": "phone",
+      "from": "not-a-phone",
+      "to": "not-a-phone",
+      "issue": "unrecognized phone"
+    },
+    {
+      "row": 13,
+      "field": "last_service",
+      "from": "13.09.2026",
+      "to": "2026-09-13",
+      "issue": null
+    },
+    {
+      "row": 14,
+      "field": "phone",
+      "from": "347.555.0177",
+      "to": "(347) 555-0177",
+      "issue": null
+    },
+    {
+      "row": 14,
+      "field": "last_service",
+      "from": "n/a",
+      "to": "",
+      "issue": "empty date placeholder"
+    },
+    {
+      "row": 15,
+      "field": "email",
+      "from": "elena.vasquez@ACME.com",
+      "to": "elena.vasquez@acme.com",
+      "issue": null
+    },
+    {
+      "row": 15,
+      "field": "phone",
+      "from": "2125550142",
+      "to": "(212) 555-0142",
+      "issue": null
+    },
+    {
+      "row": 15,
+      "field": "last_service",
+      "from": "01-05-2024",
+      "to": "2024-01-05",
+      "issue": null
+    },
+    {
+      "row": 17,
+      "field": "phone",
+      "from": "929-555-0110",
+      "to": "(929) 555-0110",
+      "issue": null
+    },
+    {
+      "row": 17,
+      "field": "last_service",
+      "from": "2024.5.9",
+      "to": "2024-05-09",
+      "issue": null
+    },
+    {
+      "row": 18,
+      "field": "phone",
+      "from": "+1 718 555 0194",
+      "to": "(718) 555-0194",
+      "issue": null
+    },
+    {
+      "row": 18,
+      "field": "last_service",
+      "from": "5/9/24",
+      "to": "2024-05-09",
+      "issue": null
+    },
+    {
+      "row": 19,
+      "field": "last_service",
+      "from": "2/2/26",
+      "to": "2026-02-02",
+      "issue": null
+    },
+    {
+      "row": 20,
+      "field": "phone",
+      "from": "9735550155",
+      "to": "(973) 555-0155",
+      "issue": null
+    },
+    {
+      "row": 21,
+      "field": "name",
+      "from": "mike rossi",
+      "to": "Mike Rossi",
+      "issue": null
+    },
+    {
+      "row": 21,
+      "field": "phone",
+      "from": "973-555-0155",
+      "to": "(973) 555-0155",
+      "issue": null
+    },
+    {
+      "row": null,
+      "field": "record",
+      "from": "duplicate by email",
+      "to": "merged into earlier row",
+      "issue": "duplicate"
+    },
+    {
+      "row": null,
+      "field": "record",
+      "from": "duplicate by email",
+      "to": "merged into earlier row",
+      "issue": "duplicate"
+    },
+    {
+      "row": null,
+      "field": "record",
+      "from": "duplicate by email",
+      "to": "merged into earlier row",
+      "issue": "duplicate"
+    },
+    {
+      "row": null,
+      "field": "record",
+      "from": "duplicate by name_phone",
+      "to": "merged into earlier row",
+      "issue": "duplicate"
+    }
+  ]
+}
